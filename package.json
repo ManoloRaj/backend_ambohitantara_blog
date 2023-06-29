@@ -6,7 +6,7 @@
     "serverless-http": "^3.2.0"
   },
   "scripts": {
-    "start": "set NODE_OPTIONS=--openssl-legacy-provider && netlify-lambda serve src",
-    "build": "set NODE_OPTIONS=--openssl-legacy-provider && netlify-lambda build src"
+    "start": "export NODE_OPTIONS=--openssl-legacy-provider && netlify-lambda serve src",
+    "build": "export NODE_OPTIONS=--openssl-legacy-provider && netlify-lambda build src"
   }
 }
